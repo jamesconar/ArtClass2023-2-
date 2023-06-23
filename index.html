@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-split">
+      <div class="gallery" id="image-gallery">
+        <!-- Image elements will be dynamically added here -->
+      </div>
+    </div>
+    <div class="right-split">
+      <div class="exp-bar">
+        <div class="exp-progress" id="exp-progress"></div>
+      </div>
+      <div class="level-info">
+        <span class="level-label">Level:</span>
+        <span class="level-value" id="level-value">1</span>
+      </div>
+      <div id="exp-info">Exp: 0 / 100</div>
+      <div class="upload-container">
+        <label for="image-input" class="upload-button">
+          <span class="upload-icon">+</span>
+          <span class="upload-text">Upload Image</span>
+        </label>
+        <input type="file" id="image-input" accept="image/*">
+      </div>
+      <div class="clear-data-container">
+        <button id="clear-data-button">Clear Data</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left-split {
+    flex: 1;
+    padding: 20px;
+    background-color: #262626;
+    overflow-y: auto;
+  }
+  
+  .right-split {
+    width: 200px;
+    padding: 20px;
+    background-color: #83d683;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+  }
+  
+  .exp-bar {
+    height: 30px;
+    width: 100%;
+    background-color: #e0e0e0;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #fff;
+  }
+  
+  .exp-progress {
+    height: 100%;
+    width: 0;
+    background-color: #83d683;
+    transition: width 1s ease;
+  }
+  
+  .level-info {
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .level-info span {
+    display: block;
+  }
+  
+  .level-label {
+    font-size: 16px;
+  }
+  
+  .level-value {
+    font-size: 24px;
+  }
+  
+  .upload-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .upload-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #83d683;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .upload-icon {
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  
+  .upload-text {
+    font-size: 16px;
+  }
+  
+  .upload-button:hover {
+    background-color: #7ac274;
+  }
+  
+  #image-input {
+    display: none;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+  
+  .image-container {
+    margin-bottom: 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .uploaded-image {
+    max-width: 100%;
+    max-height: 100%;
+    border: 5px solid #fff2cc;
+    border-radius: 10px;
+  }
+  
+  .image-details {
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .image-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .image-description {
+    font-style: italic;
+  }
+  
+  .clear-data-container {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #clear-data-button {
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #clear-data-button:hover {
+    background-color: #ff3333;
+  }
+  
+  /* Button Styles */
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+  .primary-button {
+    background-color: #4caf50;
+  }
+  
+  .primary-button:hover {
+    background-color: #45a049;
+  }
+  
+  .secondary-button {
+    background-color: #008cba;
+  }
+  
+  .secondary-button:hover {
+    background-color: #007095;
+  }
+  
+  .warning-button {
+    background-color: #f44336;
+  }
+  
+  .warning-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .success-button {
+    background-color: #00c853;
+  }
+  
+  .success-button:hover {
+    background-color: #00a74f;
+  }
+  
+  .delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 5px;
+    background-color: #f44336;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 1;
+  }
+  
+  .delete-button:hover {
+    background-color: #d32f2f;
+  }
+  
